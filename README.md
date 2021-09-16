@@ -1,5 +1,8 @@
 # kubectl-neat-diff
 
+Note : This repo is forked from https://github.com/sh0rez/kubectl-neat-diff , The only change I required is to provide colored output in mac too. The native diff from mac does not have color mode,https://superuser.com/questions/578359/how-can-i-enable-colored-output-for-osx-diff
+
+
 De-clutter your `kubectl diff` output using [kubectl-neat](https://github.com/itaysk/kubectl-neat) (looking at you, `managedFields`):
 
 ![](./banner.png)
@@ -9,13 +12,14 @@ De-clutter your `kubectl diff` output using [kubectl-neat](https://github.com/it
 You can try `go get`:
 
 ```bash
-$ GO111MODULE=on go get github.com/sh0rez/kubectl-neat-diff
+$ brew install diffutils
+$ GO111MODULE=on go get github.com/parinapatel/kubectl-neat-diff
 ```
 
 If that doesn't work, clone and build manually:
 
 ```bash
-$ git clone https://github.com/sh0rez/kubectl-neat-diff
+$ git clone https://github.com/parinapatel/kubectl-neat-diff
 $ cd kubectl-neat-diff
 $ make install
 ```
